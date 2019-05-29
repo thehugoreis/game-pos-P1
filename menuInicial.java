@@ -18,10 +18,11 @@ class menuInicial {
 		System.out.println("[1]-Descricao do jogo.");
 		System.out.println("[2]-Instrucoes de como jogar.");
 		System.out.println("[3]-Comecar a jogar!");
-		System.out.println("[4]-Sair do jogo");
+		System.out.println("[4]-Sobre");
+		System.out.println("[5]-Sair do jogo");
 		menuInicial = resp.nextInt();
 
-		if (menuInicial == 4) {
+		if (menuInicial == 5) {
 			telaIni = 0;
 			checagem = 0;
 		}
@@ -46,6 +47,11 @@ class menuInicial {
 			menuInicial = 0;
 		}
 
+	}
+
+	//Menu sobre os autores
+	void sobre(){
+		System.out.println("\nObrigado por jogar!\n\nCreditos:\n	Hugo reis, 23 anos - hugoreis2919@gmail.com\n	Antonio Carlos, 18 anos - antonio.silva145@fatec.sp.gov.br\n\n**Projeto de Ambiente de Redes - 2019**");
 	}
 
 	//Resseta a variavel menuInicial. Fazendo o loop voltar ao metodo telaBoasvindas.

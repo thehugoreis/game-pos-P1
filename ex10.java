@@ -109,7 +109,8 @@ class ex10 {
 							}
 						}
 
-					} else {
+					} 
+					else {
 						//Volta para a escolha do numero de jogadores caso a escolha nao seja valida.
 						System.out.println("\nOpcao Invalida!\n");
 						menIni.resetTojogador();
@@ -117,6 +118,11 @@ class ex10 {
 
 				}
 
+			} else if (menIni.menuInicial == 4){
+				//Menu Sobre os autores
+				menIni.sobre();
+				menIni.resetIni();
+				
 			} else {
 				//Volta para o menu inicial casa a escolha de uma opcao nao seja valida.
 
