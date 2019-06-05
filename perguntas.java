@@ -28,7 +28,7 @@ class perguntas {
     //Questão 1040426
 	void a1() {
 		
-		System.out.println("\nO tipo de tecnologia de transmissão conhecido como links ponto a ponto permite somente uma conexão entre pares de máquinas individuais.");
+		System.out.println("\nO tipo de tecnologia de transmissão conhecido como links ponto a ponto permite \nsomente uma conexão entre pares de máquinas individuais.");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -43,7 +43,7 @@ class perguntas {
     //Questão 1038853
 	void b1() {
 		
-		System.out.println("\nCom relação a redes de computadores, julgue o item a seguir. No fluxo de pacotes em uma rede de computadores, a qualidade de serviço é determinada pelos parâmetros relacionados a propagação, recuperação, interferência e perda de dados. ");
+		System.out.println("\nCom relação a redes de computadores, julgue o item a seguir. No fluxo de pacotes em \numa rede de computadores, a qualidade de serviço é determinada pelos parâmetros \nrelacionados a propagação, recuperação, interferência e perda de dados. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -58,7 +58,7 @@ class perguntas {
     //Questão 1040564
 	void c1() {
 		
-		System.out.println("\nO termo conectividade pode ser definido como sendo um processo que compreende a conexão de computadores sem levar em consideração os meios e dispositivos de redes, com a finalidade de realizar a comunicação de dados entre locais remotos. ");
+		System.out.println("\nO termo conectividade pode ser definido como sendo um processo que compreende a conexão \nde computadores sem levar em consideração os meios e dispositivos de redes, com a finalidade \nde realizar a comunicação de dados entre locais remotos. ");
 		System.out.println("Digite [1 - Certo]/[2 - errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -79,7 +79,7 @@ class perguntas {
     //Questão 1040566
 	void a2() {
 		
-		System.out.println("\nQuanto à direção do fluxo de dados, na comunicação entre dois dispositivos no modo Half‐Duplex, cada estação pode transmitir e receber, mas nunca ao mesmo tempo. ?");
+		System.out.println("\nQuanto à direção do fluxo de dados, na comunicação entre dois dispositivos no modo \nHalf‐Duplex, cada estação pode transmitir e receber, mas nunca ao mesmo tempo. ?");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -94,7 +94,7 @@ class perguntas {
     //Questão 1031871
 	void b2() {
 		
-		System.out.println("\nEm uma infraestrutura constituída por várias redes de tecnologias diferentes interconectadas, os roteadores têm a função de conectar as redes de mesma tecnologia, cabendo aos switches conectar aquelas de tecnologias diferentes. ");
+		System.out.println("\nEm uma infraestrutura constituída por várias redes de tecnologias diferentes \ninterconectadas, os roteadores têm a função de conectar as redes de mesma tecnologia, cabendo aos switches conectar \naquelas de tecnologias diferentes. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -109,7 +109,7 @@ class perguntas {
     //Questao 1035259
 	void c2() {
 		
-		System.out.println("\nEm fundamentos de comunicação de dados, são considerados como sinais analógicos os que variam continuamente no tempo e como sinais digitais os que apresentam variação discreta no tempo (descontinuidade). Os computadores e as redes de computadores utilizam sinais digitais, sendo que o bit 0, necessariamente, deve ter valor de 0 Volts e o bit 1, o valor igual a 5 Volts. ");
+		System.out.println("\nEm fundamentos de comunicação de dados, são considerados como sinais analógicos os que \nvariam continuamente no tempo e como sinais digitais os que apresentam variação discreta no tempo (descontinuidade). \nOs computadores e as redes de computadores utilizam sinais digitais, sendo que o bit 0, necessariamente, deve ter valor de 0 Volts e o bit 1, o valor igual a 5 Volts. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -180,7 +180,7 @@ class perguntas {
         //Questão 1035260
         void a3() {
 		
-		System.out.println("\nEm fundamentos de comunicação de dados, para que os sinais analógicos sejam tratados/processados por ambientes computacionais digitais, deve‐se realizar a digitalização dos sinais analógicos. Nesse processo, o sinal digital irá representar fielmente, por uma combinação de zeros e uns, todos os pontos da curva do sinal analógico original, justificando o fato de ter mais qualidade e clareza na reprodução. ");
+		System.out.println("\nEm fundamentos de comunicação de dados, para que os sinais analógicos sejam tratados/processados \npor ambientes computacionais digitais, deve‐se realizar a digitalização dos sinais analógicos. Nesse processo, \no sinal digital irá representar fielmente, por uma combinação de zeros e uns, todos os pontos da curva do sinal \nanalógico original, justificando o fato de ter mais qualidade e clareza na reprodução. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -212,7 +212,7 @@ class perguntas {
         //Questão 1025679
 		void c3() {
 		
-		System.out.println("\nEm uma rede de computadores, o acesso remoto a programas, equipamentos, impressoras e dados, independentemente da localização física desses recursos e dos próprios usuários, é possível mediante a utilização de ");
+		System.out.println("\nEm uma rede de computadores, o acesso remoto a programas, equipamentos, impressoras e dados, \nindependentemente da localização física desses recursos e dos próprios usuários, é possível mediante \na utilização de ");
 		System.out.println("[1 - becape corporativo]\n[2 - controle de acesso logico]\n[3 - gerenciamento de contas]\n[4 - processamento centralizado]\n[5 - compartilhamento de recursos]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
