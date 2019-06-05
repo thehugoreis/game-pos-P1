@@ -26,11 +26,11 @@ class ex10 {
 			} else if (menIni.menuInicial == 2) {
 				menIni.cjogar(); //Caso a variavel menuInicial for igual a dois instrucoes de como jogar sao mostradas.
 
-			} else if (menIni.menuInicial == 3) {
-
-				//Caso a variavel menuInicial for igual a tres o jogo comeca.
+			} else if (menIni.menuInicial == 3) {    //Caso a variavel menuInicial for igual a tres o jogo inicia.
 				if (checagem == 1) {
-					System.out.println("\nNesta sessao jogaram [1] um jogador ou [2] dois jogadores?");
+                    System.out.println("\n**********************************************************************************\n");
+					System.out.println("Nesta sessao jogaram [1] um jogador ou [2] dois jogadores?");
+					System.out.print("\n> ");
 					numJogadores = resp.nextInt(); // Pergunta e registra numero de jogadores.
 
 					//Caso o numero de jogadores for igual a um o bloco de perguntas para um jogador inicia.
@@ -41,31 +41,15 @@ class ex10 {
 						while (checagem == 1) {
 						
 							//Metodos referentes as perguntas e suas resposta corretas.
+							pgt.aviso1();
 							pgt.a1();
 							pgt.b1();
 							pgt.c1();
 
-							pgt.respsomaPontos();
+							pgt.respsomaPontos1();
 							pgt.avisoFinal1();
-							obj1.msg();
-							System.out.println("\nDeseja voltar ao menu e jogarovamente? [1 - sim]/[2 - nao]");
-							int respNjogador = resp.nextInt();//Registra decisao do jogador em jogar novamente ou nao.
-
-							if (respNjogador == 1) {
-								System.out.println("\n");//Caso o jogador deseje jogar novamente uma nova linha eh impressa e o loop de perguntas reinicia
-								menIni.menuInicial = 0;
-								menIni.telaBoasvindas();
-							} else if (respNjogador == 2) {
-								/*Caso jogador nao deseje jogar novamente a variavel do loop e 
-								 *modificada para encerralo, uma mensagem de creditos aparece e o programa eh finalizado.*/
-								System.exit(0);
-
-							} else {
-								/* Retorna a mensagem de opcao invalida e finaliza o programa*/
-								System.out.println("\nOpcao invalida");
-								System.exit(0);
-							}
-
+							obj1.msgFinal();
+							System.exit(0);
 						}
 
 					} else if (numJogadores == 2) {
@@ -86,27 +70,11 @@ class ex10 {
 							pgt.b2();
 							pgt.c2();
 
-							pgt.respsomaPontos();
+							pgt.respsomaPontos2();
 							pgt.avisoFinal2();
 
-							obj1.msg();
-							System.out.println("\nDeseja voltar ao menu e jogarovamente? [1 - sim]/[2 - nao]");
-							int respNjogador = resp.nextInt();//Registra decisao do jogador em jogar novamente ou nao.
-
-							if (respNjogador == 1) {
-								System.out.println("\n");//Caso o jogador deseje jogar novamente uma nova linha eh impressa e o loop de perguntas reinicia
-								menIni.menuInicial = 0;
-								menIni.telaBoasvindas();
-							} else if (respNjogador == 2) {
-								/*Caso jogador nao deseje jogar novamente a variavel do loop e 
-								 *modificada para encerralo, uma mensagem de creditos aparece e o programa eh finalizado.*/
-								System.exit(0);
-
-							} else {
-								/* Retorna a mensagem de opcao invalida e finaliza o programa*/
-								System.out.println("\nOpcao invalida");
-								System.exit(0);
-							}
+							obj1.msgFinal();
+							System.exit(0);
 						}
 
 					} 
@@ -124,8 +92,7 @@ class ex10 {
 				menIni.resetIni();
 				
 			} else {
-				//Volta para o menu inicial casa a escolha de uma opcao nao seja valida.
-
+				//Volta para o menu inicial caso a escolha de uma opcao nao seja valida.
 				System.out.println("\nOpcao invalida!");
 				menIni.resetIni();
 

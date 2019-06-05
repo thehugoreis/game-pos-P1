@@ -30,6 +30,7 @@ class perguntas {
 		
 		System.out.println("\nO tipo de tecnologia de transmissão conhecido como links ponto a ponto permite somente uma conexão entre pares de máquinas individuais.");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 2) {
@@ -44,6 +45,7 @@ class perguntas {
 		
 		System.out.println("\nCom relação a redes de computadores, julgue o item a seguir. No fluxo de pacotes em uma rede de computadores, a qualidade de serviço é determinada pelos parâmetros relacionados a propagação, recuperação, interferência e perda de dados. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 2) {
@@ -58,6 +60,7 @@ class perguntas {
 		
 		System.out.println("\nO termo conectividade pode ser definido como sendo um processo que compreende a conexão de computadores sem levar em consideração os meios e dispositivos de redes, com a finalidade de realizar a comunicação de dados entre locais remotos. ");
 		System.out.println("Digite [1 - Certo]/[2 - errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 2) {
@@ -78,6 +81,7 @@ class perguntas {
 		
 		System.out.println("\nQuanto à direção do fluxo de dados, na comunicação entre dois dispositivos no modo Half‐Duplex, cada estação pode transmitir e receber, mas nunca ao mesmo tempo. ?");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 1) {
@@ -92,6 +96,7 @@ class perguntas {
 		
 		System.out.println("\nEm uma infraestrutura constituída por várias redes de tecnologias diferentes interconectadas, os roteadores têm a função de conectar as redes de mesma tecnologia, cabendo aos switches conectar aquelas de tecnologias diferentes. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 2) {
@@ -106,6 +111,7 @@ class perguntas {
 		
 		System.out.println("\nEm fundamentos de comunicação de dados, são considerados como sinais analógicos os que variam continuamente no tempo e como sinais digitais os que apresentam variação discreta no tempo (descontinuidade). Os computadores e as redes de computadores utilizam sinais digitais, sendo que o bit 0, necessariamente, deve ter valor de 0 Volts e o bit 1, o valor igual a 5 Volts. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 2) {
@@ -116,20 +122,38 @@ class perguntas {
 		}
 	}
 
-	//Aviso final do jogo onde sera calculado o vencedor ou o empate.
+	//Aviso final quando um jogador selecionado, onde sera exibito a quantidade de pontos acumulados.
 	void avisoFinal1() {
-		System.out.println("\nViva o campeao!!\nSua pontuacao foi:");
-		
-		System.out.println("Parabens " + j1.nome + " voce eh o vencedor(a) com " + j1.pontosJ1 + " pontos.");
+		System.out.println("Parabens " + j1.nome + " voce eh o vencedor(a).");
+		System.out.println("Sua pontuacao foi: " + j1.pontosJ1 + " pontos.");
+        System.out.println("\nVIVA O CAMPEAO!!");
 
 	}
 
-	void respsomaPontos() {
-		if (j1.pontosJ1 + j2.pontosJ2 == 30){
+	//Mensagem motivacional para um jogador
+	void respsomaPontos1() {
+		if (j1.pontosJ1  == 30){
+            System.out.println("\n**********************************************************************************");
 			System.out.println("\nMuito bom!");
-		} else if (j1.pontosJ1 + j2.pontosJ2 > 15 && j1.pontosJ1 + j2.pontosJ2 < 30) {
+		} else if (j1.pontosJ1  > 15 && j1.pontosJ1 < 30) {
+            System.out.println("\n**********************************************************************************");
+			System.out.println("\nForca!");
+		} else if (j1.pontosJ1 < 15) {
+            System.out.println("\n**********************************************************************************");
+			System.out.println("\nVamos melhorar!");
+		}
+	}
+	
+	//Mensagem motivacional para os dois jogadores
+	void respsomaPontos2() {
+		if (j1.pontosJ1 + j2.pontosJ2 == 60){
+            System.out.println("\n**********************************************************************************");
+			System.out.println("\nMuito bom!");
+		} else if (j1.pontosJ1 + j2.pontosJ2 > 30 && j1.pontosJ1 + j2.pontosJ2 < 60) {
+            System.out.println("\n**********************************************************************************");
 			System.out.println("\nForca equipe!");
-		} else if (j1.pontosJ1 + j2.pontosJ2 < 15) {
+		} else if (j1.pontosJ1 + j2.pontosJ2 < 30) {
+            System.out.println("\n**********************************************************************************");
 			System.out.println("\nVamos melhorar!");
 		}
 	}
@@ -149,15 +173,16 @@ class perguntas {
 		} else if (j1.pontosJ1 == j2.pontosJ2) {
 			System.out.println("Paraens " + j1.nome + " e " + j2.nome + ",voce terminaram empatados.\n" + j1.nome + " com " + j1.pontosJ1 + " pontos.\n" + j2.nome + " com " + j2.pontosJ2 + " pontos.");
 		}
-	}
-	
-        //Outras Questoes
-        
+	}	
+
+//Outras Questoes
+
         //Questão 1035260
         void a3() {
 		
 		System.out.println("\nEm fundamentos de comunicação de dados, para que os sinais analógicos sejam tratados/processados por ambientes computacionais digitais, deve‐se realizar a digitalização dos sinais analógicos. Nesse processo, o sinal digital irá representar fielmente, por uma combinação de zeros e uns, todos os pontos da curva do sinal analógico original, justificando o fato de ter mais qualidade e clareza na reprodução. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 2) {
@@ -173,6 +198,7 @@ class perguntas {
 		
 		System.out.println("\nA ethernet é um tipo de tecnologia de acesso utilizado nas redes LAN.");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 1) {
@@ -188,6 +214,7 @@ class perguntas {
 		
 		System.out.println("\nEm uma rede de computadores, o acesso remoto a programas, equipamentos, impressoras e dados, independentemente da localização física desses recursos e dos próprios usuários, é possível mediante a utilização de ");
 		System.out.println("[1 - becape corporativo]\n[2 - controle de acesso logico]\n[3 - gerenciamento de contas]\n[4 - processamento centralizado]\n[5 - compartilhamento de recursos]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 5) {
@@ -203,6 +230,7 @@ class perguntas {
 		
 		System.out.println("\nDo ponto de vista da comunicação entre computadores, a Internet é tecnicamente baseada em ");
 		System.out.println("[1 - comutação de células.]\n[2 - comutação de circuitos.]\n[3 - rótulos de comutação.]\n[4 - comutação de pacotes. ]\n[5 - comutação de mensagens.]");
+		System.out.print("\n> ");
 		res = resp.nextInt();
 
 		if (res == 4) {
