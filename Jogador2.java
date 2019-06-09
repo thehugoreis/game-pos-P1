@@ -11,6 +11,7 @@ class Jogador2 {
 
 	//Metodo que pergunta o nome/nick do jogador 2
 	void nome() {
+	System.out.println("\n**********************************************************************************");
 	System.out.println("\nJogador 2: Qual o seu nome ou nickname?");
 	System.out.print("\n> ");
 	nome = resp.nextLine();

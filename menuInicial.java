@@ -33,7 +33,7 @@ class menuInicial {
 	//Tela onde e mostrado a descricao do jogo e seu proposito.
 	void desc() {
         System.out.println("\n**********************************************************************************\n");
-		System.out.println("Este jogo foi produzido para o curso de redes como projeto de sala. O seu objetivo e registrar o nome dos jogadores, um ou mais, apresentar a eles perguntas e por fim uma pontuacao com a quantidade de acertos e o vencedor.\n");
+		System.out.println("Este jogo foi produzido para o curso de redes como projeto de sala. O seu objetivo e \nregistrar o nome dos jogadores, um ou mais, apresentar a eles perguntas e por fim uma \npontuacao com a quantidade de acertos e o vencedor.\n");
 		System.out.println("\n\nVoltar a tela inicial? [1-Sim]/[2-Nao]");
 		System.out.print("\n> ");
 		int descResp = resp.nextInt();
@@ -45,7 +45,7 @@ class menuInicial {
 	//Tela com descricoes de como jogar.
 	void cjogar() {
         System.out.println("\n**********************************************************************************\n");
-		System.out.println("Este jogo funciona com a interacao do usuario inserindo numeros.\n  Por exemplo:\n  *****Esta e uma pergunta*****\n     [1 - resposta um]\n     [2 - resposta dois]\n\nO usuario/jogador deve entao inserir no console o numero correspondete a opcao de resposta desejada e pressionar a tecla enter/return.");
+		System.out.println("Este jogo funciona com a interacao do usuario inserindo numeros.\n  Por exemplo:\n  *****Esta e uma pergunta*****\n     [1 - resposta um]\n     [2 - resposta dois]\n\nO usuario/jogador deve entao inserir no console o numero correspondete a opcao de \nresposta desejada e pressionar a tecla enter/return.");
 		System.out.println("\n\nVoltar a tela inicial? [1-Sim]/[2-Nao]");
 		System.out.print("\n> ");
 		int cjogarResp = resp.nextInt();

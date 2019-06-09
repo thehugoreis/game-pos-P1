@@ -23,6 +23,7 @@ class perguntas {
 
 	//perguntas jogador 1
 	void aviso1() {
+        System.out.println("\n**********************************************************************************");
 		System.out.println("\n" + j1.nome + " , responda as questoes corretamente e acumule pontos.");
 	}
     //Questão 1040426
@@ -74,6 +75,7 @@ class perguntas {
 	//Perguntas Jogador 2
 	
 	void aviso2() {
+        System.out.println("\n**********************************************************************************");
 		System.out.println("\n"+ j2.nome + " , responda as questoes corretamente e acumule pontos.");
 	}
     //Questão 1040566
@@ -94,7 +96,7 @@ class perguntas {
     //Questão 1031871
 	void b2() {
 		
-		System.out.println("\nEm uma infraestrutura constituída por várias redes de tecnologias diferentes \ninterconectadas, os roteadores têm a função de conectar as redes de mesma tecnologia, cabendo aos switches conectar \naquelas de tecnologias diferentes. ");
+		System.out.println("\nEm uma infraestrutura constituída por várias redes de tecnologias diferentes \ninterconectadas, os roteadores têm a função de conectar as redes de mesma \ntecnologia, cabendo aos switches conectar aquelas de tecnologias diferentes. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -109,7 +111,7 @@ class perguntas {
     //Questao 1035259
 	void c2() {
 		
-		System.out.println("\nEm fundamentos de comunicação de dados, são considerados como sinais analógicos os que \nvariam continuamente no tempo e como sinais digitais os que apresentam variação discreta no tempo (descontinuidade). \nOs computadores e as redes de computadores utilizam sinais digitais, sendo que o bit 0, necessariamente, deve ter valor de 0 Volts e o bit 1, o valor igual a 5 Volts. ");
+		System.out.println("\nEm fundamentos de comunicação de dados, são considerados como sinais analógicos \nos que variam continuamente no tempo e como sinais digitais os que apresentam variação \ndiscreta no tempo (descontinuidade). Os computadores e as redes de computadores utilizam \nsinais digitais, sendo que o bit 0, necessariamente, deve ter valor de 0 Volts e o bit 1, o valor igual a 5 Volts. ");
 		System.out.println("Digite [1 - Certo]/[2 - Errado]");
 		System.out.print("\n> ");
 		res = resp.nextInt();
@@ -160,7 +162,7 @@ class perguntas {
 
 	//Aviso final do jogo onde sera calculado o vencedor ou o empate.
 	void avisoFinal2() {
-		System.out.println("\nViva o campeao!\nO jogador vencedor foi:");
+		System.out.println("\nVIVA O CAMPEAO!\n\nO jogador(a) vencedor foi:");
 		
 		  if (j1.pontosJ1 > j2.pontosJ2) {
 
@@ -171,7 +173,7 @@ class perguntas {
 			System.out.println("Parabens " + j2.nome + " voce eh o vencedor(a) com " + j2.pontosJ2 + " pontos.\nContra " + j1.pontosJ1 + " pontos do seu adeversario(a) " + j1.nome + ".");
 
 		} else if (j1.pontosJ1 == j2.pontosJ2) {
-			System.out.println("Paraens " + j1.nome + " e " + j2.nome + ",voce terminaram empatados.\n" + j1.nome + " com " + j1.pontosJ1 + " pontos.\n" + j2.nome + " com " + j2.pontosJ2 + " pontos.");
+			System.out.println("Paraens " + j1.nome + " e " + j2.nome + ", voces terminaram empatados.\n" + j1.nome + " com " + j1.pontosJ1 + " pontos.\n" + j2.nome + " com " + j2.pontosJ2 + " pontos.");
 		}
 	}	
 
