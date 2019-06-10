@@ -1,0 +1,8 @@
+
+Do ponto de vista da comunicação entre computadores, a Internet é tecnicamente baseada em:
+
+        	1 - comutação de células.
+        	2 - comutação de circuitos.
+        	3 - rótulos de comutação.
+        	4 - comutação de pacotes. 
+        	5 - comutação de mensagens.		

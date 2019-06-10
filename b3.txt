@@ -1,0 +1,5 @@
+
+A ethernet é um tipo de tecnologia de acesso utilizado nas redes LAN.
+
+	        1 - Certo 
+      		2 - Errado

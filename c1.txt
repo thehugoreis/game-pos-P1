@@ -1,0 +1,7 @@
+
+O termo conectividade pode ser definido como sendo um processo que compreende a conexão 
+de computadores sem levar em consideração os meios e dispositivos de redes, com a finalidade 
+de realizar a comunicação de dados entre locais remotos.
+
+		1 - Certo
+		2 - errado

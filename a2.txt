@@ -1,0 +1,6 @@
+
+Quanto à direção do fluxo de dados, na comunicação entre dois dispositivos no modo Half‐Duplex, 
+cada estação pode transmitir e receber, mas nunca ao mesmo tempo.
+
+		1 - Certo
+		2 - Errado

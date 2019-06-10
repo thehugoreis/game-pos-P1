@@ -1,0 +1,8 @@
+
+Em fundamentos de comunicação de dados, são considerados como sinais analógicos os que variam 
+continuamente no tempo e como sinais digitais os que apresentam variação discreta no tempo 
+(descontinuidade). Os computadores e as redes de computadores utilizam sinais digitais, sendo 
+que o bit 0, necessariamente, deve ter valor de 0 Volts e o bit 1, o valor igual a 5 Volts.
+
+		1 - Certo
+		2 - Errado

@@ -1,0 +1,8 @@
+
+Em fundamentos de comunicação de dados, para que os sinais analógicos sejam tratados/processados 
+por ambientes computacionais digitais, deve‐se realizar a digitalização dos sinais analógicos. Nesse 
+processo, o sinal digital irá representar fielmente, por uma combinação de zeros e uns, todos os pontos 
+da curva do sinal analógico original, justificando o fato de ter mais qualidade e clareza na reprodução.
+		
+		1 - Certo
+		2 - Errado

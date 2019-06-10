@@ -1,0 +1,6 @@
+
+O tipo de tecnologia de transmissão conhecido como links ponto a ponto permite 
+somente uma conexão entre pares de máquinas individuais.
+
+		1 - Certo
+		2 - Errado

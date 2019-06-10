@@ -1,0 +1,7 @@
+
+Com relação a redes de computadores, julgue o item a seguir. No fluxo de pacotes em 
+uma rede de computadores, a qualidade de serviço é determinada pelos parâmetros 
+relacionados a propagação, recuperação, interferência e perda de dados.
+
+		1 - Certo
+		2 - Errado

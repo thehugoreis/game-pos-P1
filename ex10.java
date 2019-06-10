@@ -1,10 +1,12 @@
 
 import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
 
 class ex10 {
-	public static void main (String[] args) {
+	public static void main (String[] args)  throws IOException{
 		Scanner resp = new Scanner(System.in);
-		Mensagem obj1 = new Mensagem();
+		Mensagem msg = new Mensagem();
 		exnAleat2 rnd = new exnAleat2();
 		perguntas pgt = new perguntas();
 		Jogador1 J1 = new Jogador1();
@@ -18,13 +20,13 @@ class ex10 {
 		//inicia o jogo enquanto a variavel telaIni na classe menuInicial for igual a um.
 		while (menIni.telaIni == 1) {
 
-			if (menIni.menuInicial == 0) {
-				menIni.telaBoasvindas(); //Caso a variavel menuInicial for igual a zero eh mostrado na tela o menu inicial.
-			} else if (menIni.menuInicial == 1) {
-				menIni.desc(); //Caso a variavel menuInicial for igual a um eh apresentado a descricao do jogo.
+			if (menIni.menuInicial == 0) { //Caso a variavel menuInicial for igual a zero eh mostrado na tela o menu inicial.
+				menIni.telaBoasvindas(); 
+			} else if (menIni.menuInicial == 1) {    //Caso a variavel menuInicial for igual a um eh apresentado a descricao do jogo.
+				menIni.desc(); 
 
-			} else if (menIni.menuInicial == 2) {
-				menIni.cjogar(); //Caso a variavel menuInicial for igual a dois instrucoes de como jogar sao mostradas.
+			} else if (menIni.menuInicial == 2) { //Caso a variavel menuInicial for igual a dois instrucoes de como jogar sao mostradas.
+				menIni.cjogar(); 
 
 			} else if (menIni.menuInicial == 3) {    //Caso a variavel menuInicial for igual a tres o jogo inicia.
 				if (checagem == 1) {
@@ -38,9 +40,7 @@ class ex10 {
 
 						pgt.jgd1();//Metodo que pergunta e registra o nome/nick do jogador e define pontos igual a zero.
 
-						while (checagem == 1) {
-						
-							//Metodos referentes as perguntas e suas resposta corretas.
+						while (checagem == 1) {   //Metodos referentes as perguntas e suas resposta corretas.
 							pgt.aviso1();
 							pgt.a1();
 							pgt.b1();
@@ -48,11 +48,11 @@ class ex10 {
 
 							pgt.respsomaPontos1();
 							pgt.avisoFinal1();
-							obj1.msgFinal();
+							msg.msgFinal();
 							System.exit(0);
 						}
 
-					} else if (numJogadores == 2) {
+					} else if (numJogadores == 2) {  //Caso o numero de jogadores for igual a dois este bloco para dois jogadores inicia.
 
 						//Metodos que perguntam o nome ou nick de cada um dos jogadores.
 						pgt.jgd1();
@@ -73,29 +73,24 @@ class ex10 {
 							pgt.respsomaPontos2();
 							pgt.avisoFinal2();
 
-							obj1.msgFinal();
+							msg.msgFinal();
 							System.exit(0);
 						}
 
 					} 
-					else {
-						//Volta para a escolha do numero de jogadores caso a escolha nao seja valida.
+					else { //Volta para a escolha do numero de jogadores caso a escolha nao seja valida.
 						System.out.println("\nOpcao Invalida!\n");
 						menIni.resetTojogador();
 					}
-
 				}
 
-			} else if (menIni.menuInicial == 4){
-				//Menu Sobre os autores
+			} else if (menIni.menuInicial == 4){				//Menu Sobre os autores
 				menIni.sobre();
 				menIni.resetIni();
 				
-			} else {
-				//Volta para o menu inicial caso a escolha de uma opcao nao seja valida.
+			} else {				//Volta para o menu inicial caso a escolha de uma opcao nao seja valida.
 				System.out.println("\nOpcao invalida!");
 				menIni.resetIni();
-
 			}
 
 		}

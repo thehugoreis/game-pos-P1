@@ -1,0 +1,10 @@
+
+Em uma rede de computadores, o acesso remoto a programas, equipamentos, impressoras e dados, 
+independentemente da localização física desses recursos e dos próprios usuários, é possível 
+mediante a utilização de:
+
+		1 - becape corporativo
+		2 - controle de acesso logico
+		3 - gerenciamento de contas
+		4 - processamento centralizado
+		5 - compartilhamento de recursos

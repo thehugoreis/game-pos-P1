@@ -1,0 +1,7 @@
+
+Em uma infraestrutura constituída por várias redes de tecnologias diferentes interconectadas, 
+os roteadores têm a função de conectar as redes de mesma tecnologia, cabendo aos switches 
+conectar aquelas de tecnologias diferentes.
+
+		1 - Certo
+		2 - Errado
