@@ -213,11 +213,11 @@ class perguntas {
 		
 		  if (j1.pontosJ1 > j2.pontosJ2) {
 
-			System.out.println("Parabens " + j1.nome + " voce eh o vencedor(a) com " + j1.pontosJ1 + " pontos.\nContra " + j2.pontosJ2 + " pontos do seu adeversario(a) " + j2.nome + ".");
+			System.out.println("Parabens " + j1.nome + " voce eh o vencedor(a) com " + j1.pontosJ1 + " pontos.\nContra " + j2.pontosJ2 + " pontos do seu adversario(a) " + j2.nome + ".");
 
 		} else if (j2.pontosJ2 > j1.pontosJ1) {
 
-			System.out.println("Parabens " + j2.nome + " voce eh o vencedor(a) com " + j2.pontosJ2 + " pontos.\nContra " + j1.pontosJ1 + " pontos do seu adeversario(a) " + j1.nome + ".");
+			System.out.println("Parabens " + j2.nome + " voce eh o vencedor(a) com " + j2.pontosJ2 + " pontos.\nContra " + j1.pontosJ1 + " pontos do seu adversario(a) " + j1.nome + ".");
 
 		} else if (j1.pontosJ1 == j2.pontosJ2) {
 			System.out.println("Paraens " + j1.nome + " e " + j2.nome + ", voces terminaram empatados.\n" + j1.nome + " com " + j1.pontosJ1 + " pontos.\n" + j2.nome + " com " + j2.pontosJ2 + " pontos.");
